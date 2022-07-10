@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ----- Top Banner & Banner Header ----- */
+
+.centered {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-image: url(../images/topbanner.jpg);
+}
+
+
+header {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 75px;
+}
+
+/* ------------------------------------- */
+
+body {
+	background-color: orange;
+}
+
+/* ----- Bio ----- */
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 20px;
+	display: inline;
+}
+
+/* Navigation Settings */
+
+
+.navbar {
+    display: grid;
+    background-color: black;
+    padding: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "homie about services contact"
+}
+
+#homie {
+    grid-area: homie;
+}
+
+#about {
+    grid-area: about;
+}
+
+#services {
+    grid-area: services;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+
+
+.navbar ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+/* Logo Image */
+
+
+.info {
+    width: 300px;
+    float: left;
+    padding: 1rem;
+}
+
+.wrapper {
+	background-color: white;
+    margin: 1rem;
+    
+}
+
+.container {
+    margin: 2rem;
+}
+
+
+
+h2 {
+    margin: 1rem;
+    font-size: 33px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ----- Nav Animations ------ */
+
+#homie:hover {
+    opacity: 0.3;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
+  
+#homie {
+    transition: opacity 2s, transform 2s 1s;
+}
+  
+#homie:active {
+    transform: translate(0, -20px);
+    transition-duration: .5s;
+}
+  
+#homie:active {
+    transform: translate(0,-100px);
+    transition-duration: 1s;
+}
+
+
+#about:hover {
+    opacity: 0.3;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
+  
+#about {
+    transition: opacity 2s, transform 2s 1s;
+}
+  
+#about:active {
+    transform: translate(0, -20px);
+    transition-duration: .5s;
+}
+  
+#about:active {
+    transform: translate(0,-100px);
+    transition-duration: 1s;
+}
+
+#services:hover {
+    opacity: 0.3;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
+  
+#services {
+    transition: opacity 2s, transform 2s 1s;
+}
+  
+#services:active {
+    transform: translate(0, -20px);
+    transition-duration: .5s;
+}
+  
+#services:active {
+    transform: translate(0,-100px);
+    transition-duration: 1s;
+}
+
+#contact:hover {
+    opacity: 0.3;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
+  
+#contact {
+    transition: opacity 2s, transform 2s 1s;
+}
+  
+#contact:active {
+    transform: translate(0, -20px);
+    transition-duration: .5s;
+}
+  
+#contact:active {
+    transform: translate(0,-100px);
+    transition-duration: 1s;
+}
+
+/* ----- Facts Settings ----- */
+
+.facts {
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li {
+    list-style: circle;
+    margin: 1rem;
+}
+
+
+/* ----- Page Footer ------ */
+
+footer {
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+/* ----- Desktop Settings ----- */
+
+@media screen and (min-width: 1000px) {
+    ol {
+        display: inline;
+        background-color: red;
+        border: none;
+        margin: 0 1rem;
+        padding: 15px 32px;
+        text-align: center;
+    
+    }
+}
